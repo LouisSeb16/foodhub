@@ -35,3 +35,11 @@
 @mixin responsive {
     @media (max-width: 700px) { @content };
 }
+
+@mixin minHeight($default) {
+    @if $default {
+        height: 50vh;
+    }@else{
+        height: auto;
+    }
+}

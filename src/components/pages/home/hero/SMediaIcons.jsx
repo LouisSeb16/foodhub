@@ -7,9 +7,9 @@ import * as IoIcons from 'react-icons/io';
 const SMediaIcons = () => {
     return (
         <div className="icons-div">
-            <FaIcons.FaTwitter/>
-            <FaIcons.FaFacebook/>
-            <IoIcons.IoLogoWhatsapp/>
+            <FaIcons.FaTwitter className="icons t"/>
+            <FaIcons.FaFacebook className="icons f"/>
+            <IoIcons.IoLogoWhatsapp className="icons w"/>
 
         </div>
     )

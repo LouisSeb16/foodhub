@@ -1,0 +1,61 @@
+@import './../variables';
+@import './../functions';
+
+.credit{
+    padding: 150px 50px;
+    height: 60vh;
+    @include responsive{
+        height: auto;
+        padding: 70px 10px;
+    }
+
+    .card{
+        padding: 30px;
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid white;
+        box-shadow: 3px 3px 25px rgba(173, 173, 209, 0.7);
+        transition: .5s ease-in-out;
+
+        .icon-div{
+            width: 70px;
+            height: 70px;
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            background-color: map-get($textColor, 'primary');
+            color: white;
+            transition: .5s ease-in-out;
+
+
+            &:hover{
+                background-color: white;
+                color: map-get($textColor, 'primary');
+                border: 1px solid map-get($textColor, 'primary');
+            }
+        }
+
+        h3{
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: map-get($textColor, 'primary');
+        }
+        p{
+            font-size: .8rem;
+        };
+
+        &:hover{
+            transform: translateY(-1.3px);
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+
+        @include responsive{
+            margin-bottom: 10px;
+        }
+    }
+}
