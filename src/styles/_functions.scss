@@ -1,0 +1,36 @@
+@import './variables';
+
+@mixin linkEffect($passive: true) {
+    @if $passive{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1.5px;
+        border-radius: 30px;
+        background-color: map-get($textColor, 'primary');
+        transition: width .3s;
+    }@else {
+        width: 100%;
+    }
+}
+@mixin linkHover {
+    color: map-get($color, 'hover');
+}
+
+@mixin btnEffect($passive: true) {
+    @if $passive{
+        background-color: map-get($color, 'background');
+        color: map-get($textColor, 'secondary');
+    }@else {
+        background-color: map-get($color, 'hover');
+        color: map-get($textColor, 'secondary');
+    }
+}
+@mixin imgEffect {
+    transform: scale(1.2);
+    transition: .8s ease-in-out;
+}
+
+@mixin responsive {
+    @media (max-width: 700px) { @content };
+}

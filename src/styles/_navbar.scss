@@ -1,0 +1,69 @@
+@import './variables';
+@import './functions';
+
+
+.con-fluid{
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+    @include responsive{
+        padding: 10px 0px;
+    }
+    .Navbar{
+        position: relative;
+        .navbar-brand{
+            display: flex;
+            padding-top: 10px;
+
+            h1{
+                font-weight: map-get($fontWeight, 'one');
+                font-size: map-get($fontSizes, 'large');
+                color: map-get($textColor, 'primary');
+                margin-left: 5px;
+            }
+
+            .logo{
+                color: goldenrod;
+                font-size: 2.5rem;
+            }
+        }
+        .toggle-icon{
+            display: none;
+            @include responsive{
+                display: block;
+                font-size: map-get($fontSizes, 'large');
+                color: map-get($textColor, 'primary');
+                position: absolute;
+                top: 18px;
+                right: 10px;
+                margin-right: 0px;
+            }
+        }
+        .nav{
+            margin-left: 40%;
+
+            .nav-emp{
+                color: map-get($textColor, 'primary');
+                font-size: map-get($fontSizes, 'small');
+                font-weight: map-get($fontWeight, 'one');
+                margin: 10px 20px;
+                &::after{
+                    @include linkEffect($passive: true);
+                }
+                &:hover{
+                    @include linkHover();
+                }
+                &:hover::after{
+                    @include linkEffect($passive: false);
+                }
+                @include responsive {
+                    margin: 10px 0px;
+                    &:hover::after{
+                        @include linkEffect($passive: true);
+                    }
+                }
+            }
+        }
+    }
+}
