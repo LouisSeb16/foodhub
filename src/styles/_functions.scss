@@ -24,6 +24,7 @@
     }@else {
         background-color: map-get($color, 'hover');
         color: map-get($textColor, 'secondary');
+        transform: translateY(-1.2px);
     }
 }
 @mixin imgEffect {

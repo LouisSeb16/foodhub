@@ -3,12 +3,14 @@
 
 
 .con-fluid{
-    padding: 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0px;
     z-index: 4;
+    background-color: rgba(255, 247, 247, 0.7);
     @include responsive{
         padding: 10px 0px;
+        background-color: rgba(255, 247, 247, 0.9);
     }
     .Navbar{
         position: relative;

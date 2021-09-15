@@ -1,0 +1,96 @@
+@import './../variables';
+@import './../functions';
+
+.jumbotron{
+    background: url(../../assests/img/hero/hero-img.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px 150px;
+    height: 100vh;
+    position: relative;
+
+    @include responsive{
+        background: linear-gradient(rgba(255, 247, 247, 0.4),rgba(255, 247, 247, 0.4)), url(../../assests/img/hero/hero-img.jpg);
+        background-position: bottom;
+        background-size: cover;
+        padding: 150px 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 92vh;
+    }
+    
+    h1{
+        font-size: map-get($fontSizes, 'xlarge');
+        font-weight: map-get($fontWeight, 'one' );
+        width: 60%;
+        font-family: heroFont;
+        font-family: 'Comfortaa', cursive;
+        color: map-get($textColor, 'primary');
+
+
+        @include responsive{
+            margin: 20px auto;
+            width: 100%;
+            font-size: map-get($fontSizes, 'large');
+
+        }
+    }
+    p{
+        color: gray;
+        width: 60%;
+
+        @include responsive{
+            width: 95%;
+            margin: auto;
+        }
+    }
+    .btn{
+        @include btnEffect($passive: true);
+        display: block;
+        padding: 15px 20px;
+        border-radius: 30px;
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: .5x ease-in-out;
+
+        &:hover{
+            @include btnEffect($passive: false);
+        }
+        .icon{
+            margin-right: 5px;
+            font-size: 1.4rem;
+        }
+
+        @include responsive{
+            margin: 20px auto;
+        }
+    }
+
+    small{
+        color: gray;
+        font-weight: bolder;
+        margin-left: 20px;
+    }
+
+    .icons-div{
+        position: fixed;
+        bottom: 10px;
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        color: map-get($textColor, 'primary' );
+        font-size: 2rem;
+
+        @include responsive{
+            margin: auto;
+            width: 30%;
+            margin-left: 30%;
+        }
+    }
+
+
+
+}
