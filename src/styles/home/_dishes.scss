@@ -44,7 +44,7 @@
         font-weight: bolder;
 
         @include responsive{
-            width: 70px;
+            width: 80px;
             padding: 8px;
             font-size: .8rem;
         }
@@ -68,8 +68,10 @@
                 align-items: center;
                 text-align: center;
                 color: gray;
+                background-color: whitesmoke;
                 font-size: 5rem;
                 padding: 60px 20px;
+                margin-bottom: 10px;
     
                 small{
                     display: block;

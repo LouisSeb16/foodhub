@@ -3,6 +3,8 @@ import {Tab, Nav, Container, Row, Col, } from 'react-bootstrap';
 import './../../../../styles/index.scss';
 import Starters from './categories/Starters';
 import DishesCat from './categories/DishesCat';
+import Deserts from './categories/Deserts';
+import Drinks from './categories/Drinks';
 
 
 
@@ -43,11 +45,11 @@ const Dishes = () => {
                             <button type="button">View All</button>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                            hi
+                            <Deserts/>
                             <button type="button">View All</button>
                         </Tab.Pane>
                         <Tab.Pane eventKey="fourth">
-                            hi
+                            <Drinks/>
                             <button type="button">View All</button>
                         </Tab.Pane>
                     </Tab.Content>

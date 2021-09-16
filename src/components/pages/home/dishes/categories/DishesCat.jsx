@@ -29,8 +29,8 @@ const DishesCat = () => {
                 <Col sm={3}>
                     <CardComponent
                         img = {imgTwo}
-                        title = 'Spicy Beef and fresh beet humus'
-                        ingredients = {`Beef, lemon, humus, salad and mango`}
+                        title = 'Hot Cocoa and Wafers'
+                        ingredients = {`Lutus, lemon, buuter, salad and berries`}
                         cal = '234'
                         veg = {<FaIcons.FaCarrot/>}
                         mt = {<GiIcons.GiChickenOven/>}
