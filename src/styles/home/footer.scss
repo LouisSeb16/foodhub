@@ -1,0 +1,106 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 70px 20px;
+    @include responsive{
+        padding: 30px 20px;
+    }
+
+    .footer-brand{
+        display: flex;
+        margin-bottom: 20px;
+        @include responsive{
+            justify-content: center;
+        }
+
+        h1{
+            font-weight: 900;
+            margin: 5px;
+            @include responsive{
+                margin-top: 10px;
+            }
+        }
+        .logo{
+            color: goldenrod;
+            font-size: 3rem;
+        }
+    }
+    p{
+        font-size: 1rem;
+
+        @include responsive{
+            font-size: .8rem;
+        }
+    }
+    #com{
+        p{
+            width: 80%;
+            @include responsive{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .icons-div{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin-top: 40px;
+            // color: map-get($textColor, 'primary' );
+            font-size: 2.3rem;
+    
+            @include responsive{
+                margin: 20px auto;
+                width: 50%;
+            }
+            .icons{
+                cursor: pointer;
+                transition: .8s ease-in-out;
+                &:hover{
+                    transform: translateY(-1.2px);
+                }
+            }
+        }
+    }
+    #other{
+        h3{
+            font-weight: 900;
+            margin-bottom: 30px;
+
+            @include responsive{
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        .time-card{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(221, 220, 220);
+            padding: 5px 10px;
+            cursor: pointer;
+
+            p{
+                font-size: .8rem;
+                margin-top: 10px;
+            }
+        }
+        #cont{
+            p{
+                margin-bottom: 30px;
+                @include responsive{
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+    .copyright{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 900;
+        font-size: 1rem;
+    }
+
+}

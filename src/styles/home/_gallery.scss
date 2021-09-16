@@ -1,0 +1,55 @@
+.gallery{
+    padding: 20px;
+    .row{
+        margin-bottom: 10px;
+        .col-sm-3{
+            position: relative;
+            height: 220px;
+            padding: 0px;
+            background-color: rgb(17, 17, 17);
+            box-shadow: 3px 3px 20px rgba(173, 173, 209, 0.7);
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 15px;
+            width: 24%;
+            margin: auto;
+            @include responsive{
+                width: 48%;
+                margin-bottom: 10px;
+                height: 200px;
+            }
+
+            &:hover .img-fluid{
+                transform: scale(1.2);
+                opacity: 0.5;
+            }
+            &:hover span{
+                transform: translateY(0px);
+            }
+
+            .img-fluid{
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                top: 0;
+                right: 0;
+                left: 0;
+                transition: .8s ease-in-out;
+                @include responsive{
+                    height: 200px;
+                }
+            }
+            span{
+                position: absolute;
+                z-index: 2;
+                right: 50%;
+                top: 40%;
+                font-size: 2rem;
+                color: white;
+                transition: .8s ease-in-out;
+                transform: translateY(150px);
+            }
+        }
+    }
+
+}

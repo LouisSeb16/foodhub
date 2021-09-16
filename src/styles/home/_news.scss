@@ -1,0 +1,139 @@
+.news-con{
+    padding: 100px 20px;
+    height: 90vh;
+    @include responsive{
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    h1{
+        color: map-get($textColor, 'primary' );
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+        font-weight: 900;
+
+        @include responsive{
+            font-size: 1.5rem;
+        }
+    }
+
+    .news-card{
+        border-radius: 15px;
+        height: 220px;
+        overflow: hidden;
+        border: 1px solid white;
+        box-shadow: 3px 3px 25px rgba(173, 173, 209, 0.7);
+        cursor: pointer;
+        transition: .8s ease-in-out;
+        &:hover{
+            transform: translateY(-1.3px);
+        }
+        @include responsive{
+            padding: 0px;
+            height: 450px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .row{
+            height: 100%;
+            width: 100%;
+            @include responsive{
+                margin: auto;
+            }
+            .col-sm-4{
+                height: 100%;
+                padding: 0px;
+                @include responsive{
+                    height: 50%;
+                }
+
+                .img-fluid{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                }
+            }
+            #text-area{
+                padding: 20px;
+                @include responsive{
+                    padding: 10px;
+                }
+    
+                .auth-div{
+                    display: flex;
+                    @include responsive{
+                        justify-content: space-between;
+                    }
+    
+                    small{
+                        color: gray;
+                        font-size: .8rem;
+                        font-weight: bolder;
+                        margin-right: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                h4{
+                    font-size: 1.2rem;
+                    color: map-get($textColor, "primary");
+                    font-weight: 900;
+                    @include responsive{
+                        font-size: 1rem;
+                    }
+                }
+                p{
+                    font-size: .9rem;
+                    color: gray;
+                    font-weight: bold;
+                    @include responsive{
+                        width: 100%;
+                        font-weight: normal;
+                    }
+                }
+                h5{
+                    color: goldenrod;
+                    font-size: 1rem;
+                    text-align: right;
+                    margin-right: 25px;
+                    margin-top: 20px;
+    
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 1.5px;
+                        border-radius: 30px;
+                        background-color: goldenrod;
+                        transition: width .3s;
+                        text-align: right;
+                        margin-left: 50%;
+                    }
+    
+                    &:hover{
+                        cursor: pointer;
+                    }
+    
+                    &:hover::after{
+                        width: 52%;
+                    }
+                    @include responsive{
+                        margin-right: 20px;
+                        font-size: .8rem;
+                        &::after{
+                            display: none;
+                        }
+                        &:active{
+                            color: gray;
+                        }
+                    }
+                }
+    
+            }
+        }
+
+
+    }
+}

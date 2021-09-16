@@ -11,7 +11,7 @@ import Drinks from './categories/Drinks';
 const Dishes = () => {
     return (
         <Container fluid className='dishes'>
-            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+            <Tab.Container id="left-tabs-example" defaultActiveKey="second">
                 <Row>
                     <Col sm={6} className='title'>
                         <h1>Check our best dishes</h1>
