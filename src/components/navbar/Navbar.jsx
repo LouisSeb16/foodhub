@@ -38,11 +38,11 @@ const NavBar = () => {
                     
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="nav">
-                            <Nav.Link as={Link} to='/' onClick={collapseMenu} className="nav-emp">About</Nav.Link>
-                            <Nav.Link as={Link} to='#' onClick={collapseMenu} className="nav-emp">Events</Nav.Link>
-                            <Nav.Link as={Link} to='#' onClick={collapseMenu} className="nav-emp">Menu</Nav.Link>
-                            <Nav.Link as={Link} to='#' onClick={collapseMenu} className="nav-emp">Gallery</Nav.Link>
-                            <Nav.Link as={Link} to='#' onClick={collapseMenu} className="nav-emp">Contact</Nav.Link>
+                            <Nav.Link as={Link} to='/about' onClick={collapseMenu} className="nav-emp">About</Nav.Link>
+                            <Nav.Link as={Link} to='/events' onClick={collapseMenu} className="nav-emp">Events</Nav.Link>
+                            <Nav.Link as={Link} to='/menu' onClick={collapseMenu} className="nav-emp">Menu</Nav.Link>
+                            <Nav.Link as={Link} to='/gallery' onClick={collapseMenu} className="nav-emp">Gallery</Nav.Link>
+                            <Nav.Link as={Link} to='/' onClick={collapseMenu} className="nav-emp">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

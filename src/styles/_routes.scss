@@ -1,0 +1,27 @@
+.box{
+    height: 150vh;
+    padding-top: 120px;
+    @include responsive{
+        height: auto;
+    }
+}
+.box.ex{
+    padding-top: 130px;
+    .h1{
+        color: map-get($textColor, 'primary' );
+        font-weight: 900;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include responsive{
+            font-size: 2rem;
+        }
+    }
+}
+.box.ev{
+    padding-top: 100px 0px;
+}
+.box.mn{
+    padding-top: 70px 0px;
+}
