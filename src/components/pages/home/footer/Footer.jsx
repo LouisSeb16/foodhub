@@ -25,13 +25,8 @@ const Footer = () => {
                         <Row>
                             <Col sm={6}>
                                 <h3>Opening Hours</h3>
-                                <ScheduleTemplate day={'Monday'} time={'Closed'}/>
-                                <ScheduleTemplate day={'Tuesday'} time={'10:00am - 10:00pm'}/>
-                                <ScheduleTemplate day={'Wednesday'} time={'10:00am - 10:00pm'}/>
-                                <ScheduleTemplate day={'Thursday'} time={'10:00am - 10:00pm'}/>
-                                <ScheduleTemplate day={'Friday'} time={'10:00am - 10:00pm'}/>
-                                <ScheduleTemplate day={'Saturday'} time={'10:00am- 10:00pm'}/>
-                                <ScheduleTemplate day={'Sunday'} time={'10:00am - 10:00pm'}/>
+                                <ScheduleTemplate day={'Monday'} time={'Closed'}/><hr/>
+                                <ScheduleTemplate day={'Tuesday - Sunday'} time={'10:00am - 10:00pm'}/>
 
                             </Col>
                             <Col sm={6} id="cont">
